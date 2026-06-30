@@ -29,11 +29,13 @@ export default function Index() {
   return (
     <>
     <ScrollView>
-      {pokemons.map((pokemon) =>(
-        <View key={pokemon.name} className="m-4">
-          <PokemonCard name={pokemon.name} url={pokemon.url}></PokemonCard>
-        </View>
+      <View className="flex-1 flex-row flex-wrap bg-slate-700">
+        {pokemons.map((pokemon) =>(
+          <View key={pokemon.name} className="m-4 w-full">
+            <PokemonCard name={pokemon.name} url={pokemon.url}></PokemonCard>
+          </View>
         ))}
+      </View>
     </ScrollView>
 
     

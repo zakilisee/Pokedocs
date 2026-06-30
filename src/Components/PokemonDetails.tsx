@@ -21,7 +21,7 @@ function PokemonDetails({api} : PokemonDetailsProps) {
         
         try{
             const result = await fetch(api);
-            const data = await result.json();
+            const data:PokemonStateProps = await result.json();
             setPokemonDetails(data);
             console.log(`those are the : ${data}`);
         }catch(e){

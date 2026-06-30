@@ -42,8 +42,9 @@ function PokemonDetails({api} : PokemonDetailsProps) {
 
     return (
       <View>
-        <Text>level :{pokemonDetails.base_experience}</Text>
+        
         <Image source={{uri : pokemonDetails.sprites.front_default}} className='w-32 h-32'/>
+        <Text>level :{pokemonDetails.base_experience}</Text>
       </View>
     )
   

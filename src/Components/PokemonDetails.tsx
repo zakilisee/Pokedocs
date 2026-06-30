@@ -1,18 +1,28 @@
 import { useEffect, useState } from 'react'
-import { Text, View } from 'react-native'
+import { Image, Text, View } from 'react-native'
 
 interface PokemonDetailsProps{
-    api : string;
+    api : string,
     
 }
 
 interface PokemonStateProps{
-    base_experience : number;
+    base_experience : number,
+    sprites : {
+        front_default : string,
+    },
+    
 }
 
 function PokemonDetails({api} : PokemonDetailsProps) {
   
-    const [pokemonDetails, setPokemonDetails] = useState<PokemonStateProps>({'base_experience' : 0});
+    const [pokemonDetails, setPokemonDetails] = useState<PokemonStateProps>({
+        'base_experience' : 0,
+        'sprites' : {
+            'front_default' : ''
+        },
+        
+    });
     useEffect(() =>{
         fetchPokemonDetails()
     },[])
@@ -29,10 +39,11 @@ function PokemonDetails({api} : PokemonDetailsProps) {
         }
         
     }
-    
+
     return (
       <View>
-        <Text>{pokemonDetails.base_experience}</Text>
+        <Text>level :{pokemonDetails.base_experience}</Text>
+        <Text>image: <Image source={{uri : pokemonDetails.sprites.front_default}}/></Text>
       </View>
     )
   

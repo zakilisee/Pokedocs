@@ -14,7 +14,7 @@ const WhiteText = ({ className, children} : TextProps) =>(
 function PokemonCard({name, url} : PokemonCardProps) {
   
     return (
-      <View className="flex-1 items-center justify-center bg-lime-900 rounded-3xl text-white w-1/2l" >
+      <View className="flex-1 items-center justify-center bg-lime-900 rounded-3xl text-white w-1/2" >
         <PokemonDetails api={url}></PokemonDetails>
         <Text>{name}</Text>
         <Pressable onPress={async() => {await Linking.openURL(url);}}>

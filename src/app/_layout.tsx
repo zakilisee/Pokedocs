@@ -5,7 +5,7 @@ export default function RootLayout() {
   <Stack >
     <Stack.Screen name="index"  options={{
       title : "PokeDocs",
-      headerStyle : {backgroundColor : 'red'},
+      headerStyle : {backgroundColor : '#334155'},
       }}/>
   </Stack>);
 }

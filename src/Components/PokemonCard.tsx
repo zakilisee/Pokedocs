@@ -58,10 +58,15 @@ function PokemonCard({name, url} : PokemonCardProps) {
     }
     return (
       <View 
-      className="flex-1 items-center justify-center rounded-3x w-5/6 h-full rounded-3xl" 
+      className="flex-1 items-center justify-center rounded-3x w-5/6 h-full" 
       style = {{backgroundColor : 
         //@ts-ignore
-        colorsByType[color.types[0].type.name] + 40}}
+        colorsByType[color.types[0].type.name] + 40,
+        borderRadius : 40
+    
+    }}
+        
+
       >
         <PokemonDetails api={url}></PokemonDetails>
         <WhiteText>{name}</WhiteText>

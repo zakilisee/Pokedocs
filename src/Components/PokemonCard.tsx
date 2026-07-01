@@ -32,7 +32,7 @@ const colorsByType = {
     'fairy': "#F9A8D4",
 }
 const WhiteText = ({ className, children} : TextProps) =>(
-    <Text className={`text-slate-300 text-2xl ${className}`}>{children}</Text>
+    <Text className={`text-slate-900 text-2xl ${className}`}>{children}</Text>
 );
 
 

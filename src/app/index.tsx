@@ -32,7 +32,7 @@ export default function Index() {
     <ScrollView>
       <View className="w-full">
         {pokemons.map((pokemon) =>(
-          <Link key={pokemon.name} className="px-1 py-3 w-full bg-slate-700" href={"/details"}>
+          <Link key={pokemon.name} className="px-1 py-3 w-full bg-slate-700" href={{pathname : "/DetailsScreen", params: {url : pokemon.url}}} >
           <View className="w-full flex-1 items-center py-2">
             <PokemonCard name={pokemon.name} url={pokemon.url}></PokemonCard>
           </View>

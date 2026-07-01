@@ -7,5 +7,9 @@ export default function RootLayout() {
       title : "PokeDocs",
       headerStyle : {backgroundColor : '#334155'},
       }}/>
+    <Stack.Screen name="DetailsScreen" options={{
+      title : 'Details',
+      headerBackButtonDisplayMode : 'minimal'
+    }}/>
   </Stack>);
 }

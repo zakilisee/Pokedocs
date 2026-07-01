@@ -61,7 +61,7 @@ function PokemonCard({name, url} : PokemonCardProps) {
       className="flex-1 items-center justify-center rounded-3x w-5/6 h-full rounded-3xl" 
       style = {{backgroundColor : 
         //@ts-ignore
-        colorsByType[color.types[0].type.name]}}
+        colorsByType[color.types[0].type.name] + 40}}
       >
         <PokemonDetails api={url}></PokemonDetails>
         <WhiteText>{name}</WhiteText>

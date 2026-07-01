@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
-import { ScrollView, Text, View } from "react-native";
+import { ScrollView, StyleSheet, Text, View } from "react-native";
 
 import PokemonCard from "@/Components/PokemonCard";
+import { Link } from "expo-router";
 
 interface Pokemon{
   name : string;
@@ -29,11 +30,13 @@ export default function Index() {
   return (
     <>
     <ScrollView>
-      <View>
+      <View className="w-full">
         {pokemons.map((pokemon) =>(
-          <View key={pokemon.name} className="px-1 py-3 w-full bg-slate-700 flex-1 items-center">
+          <Link key={pokemon.name} className="px-1 py-3 w-full bg-slate-700" href={"/details"}>
+          <View className="w-full flex-1 items-center py-2">
             <PokemonCard name={pokemon.name} url={pokemon.url}></PokemonCard>
           </View>
+          </Link>
         ))}
       </View>
     </ScrollView>

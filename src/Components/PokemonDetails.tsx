@@ -10,8 +10,11 @@ interface PokemonStateProps{
     base_experience : number,
     sprites : {
         front_default : string,
+        back_default : string,
     },
-    
+    types : [
+        {type : {name : string},}
+    ]
 }
 
 function PokemonDetails({api} : PokemonDetailsProps) {
@@ -19,8 +22,12 @@ function PokemonDetails({api} : PokemonDetailsProps) {
     const [pokemonDetails, setPokemonDetails] = useState<PokemonStateProps>({
         'base_experience' : 0,
         'sprites' : {
-            'front_default' : ''
+            'front_default' : '',
+            'back_default' : '',
         },
+        'types' : [
+            {type : {'name' : 'grass',},}
+        ],
         
     });
     useEffect(() =>{
@@ -41,11 +48,14 @@ function PokemonDetails({api} : PokemonDetailsProps) {
     }
 
     return (
-      <View>
-        
-        <Image source={{uri : pokemonDetails.sprites.front_default}} className='w-32 h-32'/>
+      <>
+        <View className='flex-1 flex-row bg-slate-50'>
+            <Image source={{uri : pokemonDetails.sprites.front_default}} className='w-40 h-40'/>
+            <Image source={{uri : pokemonDetails.sprites.back_default}} className='w-40 h-40'/>
+        </View>
+
         <Text>level :{pokemonDetails.base_experience}</Text>
-      </View>
+      </>
     )
   
 }

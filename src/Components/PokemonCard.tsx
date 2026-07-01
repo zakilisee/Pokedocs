@@ -1,9 +1,14 @@
 import { Linking, Pressable, Text, TextProps, View } from 'react-native'
 import PokemonDetails from './PokemonDetails';
-import { useEffect, useState } from 'react';
+import { ReactNode, useEffect, useState } from 'react';
 interface PokemonCardProps{
     name: string;
     url : string;
+}
+interface colors{
+    types : [
+        {type : {name : string},}
+    ]
 }
 
 const colorsByType = {
@@ -27,15 +32,19 @@ const colorsByType = {
     'fairy': "#F9A8D4",
 }
 const WhiteText = ({ className, children} : TextProps) =>(
-    <Text className={`text-white ${className}`}>{children}</Text>
+    <Text className={`text-slate-300 text-2xl ${className}`}>{children}</Text>
 );
 
 
 function PokemonCard({name, url} : PokemonCardProps) {
 
-    const [color, setColor] = useState({})
+    const [color, setColor] = useState<colors>({
+        'types' : [
+        {'type' : {'name' : ''},}
+    ]
+    })
     useEffect(()=>{
-
+        fetchTypes();
     },[])
   
     async function fetchTypes() {
@@ -49,11 +58,13 @@ function PokemonCard({name, url} : PokemonCardProps) {
     }
     return (
       <View 
-      className="flex-1 items-center justify-center rounded-3x w-5/6 h-full" 
-      style = {{backgroundColor : colorsByType}}
+      className="flex-1 items-center justify-center rounded-3x w-5/6 h-full rounded-3xl" 
+      style = {{backgroundColor : 
+        //@ts-ignore
+        colorsByType[color.types[0].type.name]}}
       >
         <PokemonDetails api={url}></PokemonDetails>
-        <Text>{name}</Text>
+        <WhiteText>{name}</WhiteText>
         
         {/*<Pressable onPress={async() => {await Linking.openURL(url);}}>
             <WhiteText className='cursor-pointer'>click for Link</WhiteText> 

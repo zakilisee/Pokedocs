@@ -49,7 +49,7 @@ function PokemonDetails({api} : PokemonDetailsProps) {
 
     return (
       <>
-        <View className='flex-1 flex-row bg-slate-50'>
+        <View className='flex-1 flex-row'>
             <Image source={{uri : pokemonDetails.sprites.front_default}} className='w-40 h-40'/>
             <Image source={{uri : pokemonDetails.sprites.back_default}} className='w-40 h-40'/>
         </View>

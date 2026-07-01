@@ -54,7 +54,7 @@ function PokemonDetails({api} : PokemonDetailsProps) {
             <Image source={{uri : pokemonDetails.sprites.back_default}} className='w-40 h-40'/>
         </View>
 
-        <Text>level :{pokemonDetails.base_experience}</Text>
+        {/*<Text>level :{pokemonDetails.base_experience}</Text>*/}
       </>
     )
   

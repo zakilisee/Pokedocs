@@ -6,6 +6,8 @@ This is an [Expo](https://expo.dev) project created with [`create-expo-app`](htt
 
 - present pokemon with thier pictures
 - redirect to a details screen for more details 
+
+<img src="present app/Screenshot 2026-07-02 095232.png" width="400">
 ## Get started
 
 1. Install dependencies

@@ -8,6 +8,11 @@
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
+- present pokemon with thier pictures
+- redirect to a details screen for more details 
+
+<img src="present app/Screenshot 2026-07-02 095232.png" width="400">
+## Get started
 
 <!-- PROJECT LOGO -->
 <br />

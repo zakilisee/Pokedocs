@@ -1,56 +1,130 @@
-# Welcome to your Expo app 👋
+<a id="readme-top"></a>
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+[![Contributors][contributors-shield]][contributors-url]
+[![Forks][forks-shield]][forks-url]
+[![Stargazers][stars-shield]][stars-url]
+[![Issues][issues-shield]][issues-url]
+[![Unlicense License][license-shield]][license-url]
+[![LinkedIn][linkedin-shield]][linkedin-url]
 
-## Get started
+<!-- PROJECT LOGO -->
+<br />
+<div align="left">
+  <a href="https://github.com/zakilisee/Pokedocs">
+    <img src="present app/Screenshot 2026-07-02 095232.png" width="300">
+  </a>
 
-1. Install dependencies
+  <h3 align="center">Pokedocs</h3>
 
-   ```bash
-   npm install
-   ```
+  <p align="center">
+    present pokemon with thier pictures<br>
+    redirect to a details screen for more details 
+  </p>
+</div>
 
-2. Start the app
 
-   ```bash
-   npx expo start
-   ```
+### Built With:
 
-In the output, you'll find options to open the app in a
+* [![React native][React.js]][React-url]
+* [![React native][tailwind.js]][React-url]
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## Get a fresh project
 
-When you're ready, run:
+
+<!-- GETTING STARTED -->
+## Getting Started
+
+to start editing this project locally follow the instructions
+
+### Prerequisites
+
+* npm
+  ```sh
+  npm install npm@latest -g
+  ```
+
+### Installation
+
+### 1. Fork the repository (optional)
+
+If you plan to contribute, fork this repository first, then clone your fork.
+
+### 2. Clone the repository
 
 ```bash
-npm run reset-project
+git clone https://github.com/github_zakilisee/Pokedocs.git
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+### 3. Navigate into the project
 
-### Other setup steps
+```bash
+cd Pokedocs
+```
 
-- To set up ESLint for linting, run `npx expo lint`, or follow our guide on ["Using ESLint and Prettier"](https://docs.expo.dev/guides/using-eslint/)
-- If you'd like to set up unit testing, follow our guide on ["Unit Testing with Jest"](https://docs.expo.dev/develop/unit-testing/)
-- Learn more about the TypeScript setup in this template in our guide on ["Using TypeScript"](https://docs.expo.dev/guides/typescript/)
+### 4. Install dependencies
 
-## Learn more
+```bash
+npm install
+```
 
-To learn more about developing your project with Expo, look at the following resources:
+### 5. Start the Expo development server
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+```bash
+npx expo start
+```
 
-## Join the community
+You can then run the app on:
 
-Join our community of developers creating universal apps.
+- Android Emulator
+- iOS Simulator (macOS only)
+- Expo Go
+- Web
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+<!-- ROADMAP -->
+## Roadmap
+
+- [x] Make a simple interface
+- [ ] Add details screen
+- [ ] Add aditional features
+
+
+
+<!-- CONTRIBUTING -->
+## Contributing
+
+Contributions are what make the open source community such an amazing place to learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+
+If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
+Don't forget to give the project a star! Thanks again!
+
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the Branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+### Top contributors:
+
+<a href="https://github.com/zakilisee/Pokedocs/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=zakilisee/Pokedocs" alt="contrib.rocks image" />
+</a>
+
+<!-- MARKDOWN LINKS & IMAGES -->
+<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
+[contributors-shield]: https://img.shields.io/github/contributors/zakilisee/Pokedocs.svg?style=for-the-badge
+[contributors-url]: https://github.com/zakilisee/Pokedocs/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/zakilisee/Pokedocs.svg?style=for-the-badge
+[forks-url]: https://github.com/zakilisee/Pokedocs/network/members
+[stars-shield]: https://img.shields.io/github/stars/zakilisee/Pokedocs.svg?style=for-the-badge
+[stars-url]: https://github.com/zakilisee/Pokedocs/stargazers
+[issues-shield]: https://img.shields.io/github/issues/zakilisee/Pokedocs.svg?style=for-the-badge
+[issues-url]: https://github.com/zakilisee/Pokedocs/issues
+[license-shield]: https://img.shields.io/github/license/zakilisee/Pokedocs.svg?style=for-the-badge
+[license-url]: https://github.com/zakilisee/Pokedocs/blob/master/LICENSE.txt
+[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
+[linkedin-url]: https://linkedin.com/in/zakilisee
+[React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+[React-url]: https://reactjs.org/
+[tailwind.js]: https://img.shields.io/badge/-Tailwind%20CSS-%231a202c?style=for-the-badge&logo=tailwind-css

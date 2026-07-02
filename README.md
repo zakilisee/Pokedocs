@@ -47,19 +47,40 @@ to start editing this project locally follow the instructions
 
 ### Installation
 
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_zakilisee/Pokedocs.git
-   ```
-3. Install NPM packages
-   ```sh
-   npm install
-   ```
-4. Change git remote url to avoid accidental pushes to base project
-   ```sh
-   git remote set-url origin github_username/repo_name
-   git remote -v # confirm the changes
-   ```
+### 1. Fork the repository (optional)
+
+If you plan to contribute, fork this repository first, then clone your fork.
+
+### 2. Clone the repository
+
+```bash
+git clone https://github.com/github_zakilisee/Pokedocs.git
+```
+
+### 3. Navigate into the project
+
+```bash
+cd Pokedocs
+```
+
+### 4. Install dependencies
+
+```bash
+npm install
+```
+
+### 5. Start the Expo development server
+
+```bash
+npx expo start
+```
+
+You can then run the app on:
+
+- Android Emulator
+- iOS Simulator (macOS only)
+- Expo Go
+- Web
 
 <!-- ROADMAP -->
 ## Roadmap

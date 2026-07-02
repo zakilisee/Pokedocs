@@ -2,7 +2,7 @@
 
 This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
 
-# this is a pokemon app using the pokeapi
+* this is a pokemon app using the pokeapi
 
 - present pokemon with thier pictures
 - redirect to a details screen for more details 
